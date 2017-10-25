@@ -1,11 +1,9 @@
 package com.example.android.undquiz101;
 
-import android.content.DialogInterface;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.design.widget.Snackbar;
-import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.text.TextUtils;
 import android.view.View;
@@ -295,54 +293,6 @@ public class MainActivity extends AppCompatActivity {
      */
     private String getUserEmail() {
         return userEmail.getText().toString();
-    }
-
-    /**
-     * This method displays the result of quiz in alert dialog
-     */
-    private void showMessageBox(int score, String userName) {
-        AlertDialog.Builder builder = new AlertDialog.Builder(this);
-        // Set the title of alert dialog
-        builder.setTitle(R.string.alert_dialog_title);
-        // Set the message for alert dialog
-        builder.setMessage(userName
-                + getString(R.string.alert_dialog_message__part_1)
-                + " "
-                + score
-                + getString(R.string.alert_dialog_message__part_2));
-        builder.setPositiveButton(R.string.alert_dialog_positive_button
-                , new DialogInterface.OnClickListener() {
-                    @Override
-                    public void onClick(DialogInterface dialog, int which) {
-                        // If user clicks OK button, dismiss the dialog
-                        dialog.dismiss();
-                    }
-                });
-
-        builder.setNegativeButton(R.string.alert_dialog_negative_button
-                , new DialogInterface.OnClickListener() {
-                    @Override
-                    public void onClick(DialogInterface dialog, int which) {
-                        // If user clicks SEND EMAIL button, check email address id provided or not
-                        // then sends an email
-                        String userEmail = getUserEmail();
-                        // If user has not provided email address , show snack bar that displays
-                        // "user email address is required" and return.
-                        if (TextUtils.isEmpty(userEmail)) {
-                            Snackbar snackbar = Snackbar.make(findViewById(R.id.myCoordinatorLayout)
-                                    , getString(R.string.user_email_address_required)
-                                    , Snackbar.LENGTH_SHORT);
-                            snackbar.show();
-                        } else {
-                            // Create a message for email body
-                            String emailMessage = quizEmailBody(getUserName(), quizScore);
-                            // Send email
-                            sendEmail(getUserName(), getUserEmail(), emailMessage);
-                        }
-                    }
-                });
-        builder.create();
-        builder.show();
     }
 
     /**

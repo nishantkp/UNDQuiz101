@@ -92,26 +92,11 @@
     <!--Email Score Line-->
     <string name="email_score">\nScore : </string>
 
-    <!-- Positive button for alert dialog -->
-    <string name="alert_dialog_positive_button">OK</string>
-
-    <!-- Negative button for alert dialog -->
-    <string name="alert_dialog_negative_button">SEND EMAIL</string>
-
     <!-- Snack bar message for no user name -->
     <string name="user_name_required">User name is required</string>
 
     <!-- Snack bar message for no user email address -->
     <string name="user_email_address_required">User email address is required</string>
-
-    <!-- Title for alert dialog -->
-    <string name="alert_dialog_title">Results</string>
-
-    <!-- Alert dialog message part 1 -->
-    <string name="alert_dialog_message__part_1">, your quiz result is </string>
-
-    <!-- Alert dialog message part 2 -->
-    <string name="alert_dialog_message__part_2">/8 .</string>
 
     <!-- Toast message for quiz score part 1 -->
     <string name="toast_text_message_part_1">, your score is : </string>
