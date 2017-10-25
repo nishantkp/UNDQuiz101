@@ -119,4 +119,7 @@
     <!-- Toast message for quiz score part 2 -->
     <string name="toast_text_message_part_2">/8</string>
 
+    <!-- Text for send email button -->
+    <string name="send_email_button">email</string>
+
 </resources>
