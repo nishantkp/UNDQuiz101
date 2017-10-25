@@ -1,0 +1,116 @@
+<resources>
+    <string name="app_name">Quiz 101</string>
+
+    <!-- Hint for user details -->
+    <string name="user_name">name</string>
+    <string name="user_email">email</string>
+
+    <!-- Good luck text -->
+    <string name="good_luck">Good luck!</string>
+
+    <!--Question 1 and answer -->
+    <string name="question_one">Select all the countries which are in North American continent.</string>
+    <string name="question_one_answer_one">USA</string>
+    <string name="question_one_answer_two">Mexico</string>
+    <string name="question_one_answer_three">Brazil</string>
+    <string name="question_one_answer_four">Canada</string>
+
+    <!--Question 2 and answer -->
+    <string name="question_two">Which of the following is used to form water?</string>
+    <string name="question_two_answer_one">Hydrogen</string>
+    <string name="question_two_answer_two">Helium</string>
+    <string name="question_two_answer_three">Carbon</string>
+    <string name="question_two_answer_four">Oxygen</string>
+
+    <!--Question 3 and answer -->
+    <string name="question_three">Which of the following cities are in Gujarat?</string>
+    <string name="question_three_answer_one">Delhi</string>
+    <string name="question_three_answer_two">Ahmedabad</string>
+    <string name="question_three_answer_three">Surat</string>
+    <string name="question_three_answer_four">Baroda</string>
+
+    <!--Question 4 and answer -->
+    <string name="question_four">MELON is to ENMOL as 83425 is to?</string>
+    <string name="question_four_answer_one">35824</string>
+    <string name="question_four_answer_two">42385</string>
+    <string name="question_four_answer_three">35842</string>
+
+    <!--Question 5 and answer -->
+    <string name="question_five">What colour to do you get when you mix red and white?</string>
+    <string name="question_five_answer_one">Red</string>
+    <string name="question_five_answer_two">Pink</string>
+    <string name="question_five_answer_three">Violet</string>
+
+    <!--Question 6 and answer -->
+    <string name="question_six">How many stars has the American flag got?</string>
+    <string name="question_six_answer_one">49</string>
+    <string name="question_six_answer_two">50</string>
+    <string name="question_six_answer_three">51</string>
+
+    <!--Question 7 -->
+    <string name="question_seven">What is the capital of Canada?</string>
+
+    <!--Question 8 -->
+    <string name="question_eight">What is the largest number of 5 digits?</string>
+
+    <!-- Submit button text -->
+    <string name="submit_answer">submit</string>
+
+    <!-- Reset button text -->
+    <string name="reset_button">reset</string>
+
+    <!-- Hint for questions with edit text as input field -->
+    <string name="answer_hint">answer</string>
+
+    <!-- Question number -->
+    <string name="question_one_number">1.</string>
+    <string name="question_two_number">2.</string>
+    <string name="question_three_number">3.</string>
+    <string name="question_four_number">4.</string>
+    <string name="question_five_number">5.</string>
+    <string name="question_six_number">6.</string>
+    <string name="question_seven_number">7.</string>
+    <string name="question_eight_number">8.</string>
+
+    <!-- Email body message -->
+    <string name="email_body">
+        \nAns 1 : USA, Mexico, Canada
+        \nAns 2 : Hydrogen, Oxyden
+        \nAns 3 : Ahmedabad, Surat, Baroda
+        \nAns 4 : 35824
+        \nAns 5 : Pink
+        \nAns 6 : 50
+        \nAns 7 : Ottawa
+        \nAns 8 : 99999"</string>
+
+    <!-- Name in Email body message -->
+    <string name="email_name_header">\nName : </string>
+
+    <!-- Email subject line -->
+    <string name="email_subject_header">Quiz result for </string>
+
+    <!--Email Score Line-->
+    <string name="email_score">\nScore : </string>
+
+    <!-- Positive button for alert dialog -->
+    <string name="alert_dialog_positive_button">OK</string>
+
+    <!-- Negative button for alert dialog -->
+    <string name="alert_dialog_negative_button">SEND EMAIL</string>
+
+    <!-- Snack bar message for no user name -->
+    <string name="user_name_required">User name is required</string>
+
+    <!-- Snack bar message for no user email address -->
+    <string name="user_email_address_required">User email address is required</string>
+
+    <!-- Title for alert dialog -->
+    <string name="alert_dialog_title">Results</string>
+
+    <!-- Alert dialog message part 1 -->
+    <string name="alert_dialog_message__part_1">, your quiz result is </string>
+
+    <string name="alert_dialog_message__part_2">"/8 .</string>
+
+    <!-- Alert dialog message part 2 -->
+</resources>
