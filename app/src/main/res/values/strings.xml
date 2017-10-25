@@ -107,4 +107,10 @@
     <!-- Text for send email button -->
     <string name="send_email_button">email</string>
 
+    <!-- Answer for question 7 -->
+    <string name="question_seven_answer">ottawa</string>
+
+    <!-- Answer for question 8 -->
+    <string name="question_eight_answer">99999</string>
+
 </resources>

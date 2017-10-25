@@ -260,7 +260,7 @@ public class MainActivity extends AppCompatActivity {
         // Get the string from the EditText field
         String answerSeven = questionSevenAnswer.getText().toString();
         // If answer to question seven is correct return 1
-        if (answerSeven.equalsIgnoreCase("ottawa")) {
+        if (answerSeven.equalsIgnoreCase(getString(R.string.question_seven_answer))) {
             return 1;
         }
         return 0;
@@ -275,7 +275,7 @@ public class MainActivity extends AppCompatActivity {
         // Get the string from the EditText field
         String answerEight = questionEightAnswer.getText().toString();
         // If answer to question eight is correct return 1
-        if (answerEight.equals("99999")) {
+        if (answerEight.equals(getString(R.string.question_eight_answer))) {
             return 1;
         }
         return 0;
