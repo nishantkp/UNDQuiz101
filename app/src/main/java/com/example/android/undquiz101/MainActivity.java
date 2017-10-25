@@ -110,6 +110,31 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        // Button for sending score and answers via email
+        Button sendEmailButton = (Button) findViewById(R.id.send_email);
+        // Attach a listener to send email button in order to listen touch event
+        sendEmailButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // If user clicks SEND EMAIL button, check whether the email address is provided
+                // or not. Then send an email
+                String userEmail = getUserEmail();
+                // If user has not provided email address , show snack bar that displays
+                // "user email address is required" and return.
+                if (TextUtils.isEmpty(userEmail)) {
+                    Snackbar snackbar = Snackbar.make(findViewById(R.id.myCoordinatorLayout)
+                            , getString(R.string.user_email_address_required)
+                            , Snackbar.LENGTH_SHORT);
+                    snackbar.show();
+                } else {
+                    // Create a message for email body
+                    String emailMessage = quizEmailBody(getUserName(), quizScore);
+                    // Send email
+                    sendEmail(getUserName(), getUserEmail(), emailMessage);
+                }
+            }
+        });
+
         // Button for resetting score
         final Button resetButton = (Button) findViewById(R.id.reset);
         // Attach a listener to reset button in order to listen to touch event
@@ -432,7 +457,7 @@ public class MainActivity extends AppCompatActivity {
         emailIntent.setData(Uri.parse("mailto:" + userEmail));
         // Subject Line
         emailIntent.putExtra(Intent.EXTRA_SUBJECT
-                , getString(R.string.email_subject_header) + userName);
+                , getString(R.string.email_subject_header) + " " + userName);
         // Email body
         emailIntent.putExtra(Intent.EXTRA_TEXT, emailBody);
 
@@ -449,7 +474,7 @@ public class MainActivity extends AppCompatActivity {
      * @return Generates message for email body
      */
     private String quizEmailBody(String userName, int quizScore) {
-        return getString(R.string.email_name_header) + userName +
+        return getString(R.string.email_name_header) + " " + userName +
                 getString(R.string.email_score) + " " + quizScore +
                 getString(R.string.email_body);
     }
