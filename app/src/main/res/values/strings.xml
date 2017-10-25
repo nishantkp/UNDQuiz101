@@ -110,7 +110,13 @@
     <!-- Alert dialog message part 1 -->
     <string name="alert_dialog_message__part_1">, your quiz result is </string>
 
-    <string name="alert_dialog_message__part_2">"/8 .</string>
-
     <!-- Alert dialog message part 2 -->
+    <string name="alert_dialog_message__part_2">/8 .</string>
+
+    <!-- Toast message for quiz score part 1 -->
+    <string name="toast_text_message_part_1">, your score is : </string>
+
+    <!-- Toast message for quiz score part 2 -->
+    <string name="toast_text_message_part_2">/8</string>
+
 </resources>

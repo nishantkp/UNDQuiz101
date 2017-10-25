@@ -13,6 +13,7 @@ import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.RadioButton;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -98,7 +99,14 @@ public class MainActivity extends AppCompatActivity {
                         + questionSixAnswerCheck()
                         + questionSevenAnswerCheck()
                         + questionEightAnswerCheck();
-                showMessageBox(quizScore, userName);
+
+                // Show the toast message for quiz score
+                Toast.makeText(MainActivity.this,
+                        userName + getString(R.string.toast_text_message_part_1)
+                                + " "
+                                + quizScore
+                                + getString(R.string.toast_text_message_part_2),
+                        Toast.LENGTH_SHORT).show();
             }
         });
 
