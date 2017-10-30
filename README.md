@@ -9,9 +9,8 @@
 <img src="https://user-images.githubusercontent.com/32653955/31979739-46e6144c-b916-11e7-8742-3134cf374349.png" width="275" height="475"> <img src="https://user-images.githubusercontent.com/32653955/31979758-577b70a4-b916-11e7-92a0-59fea7437542.png" width="275" height="475">
 <img src="https://user-images.githubusercontent.com/32653955/31979769-6a81eb1a-b916-11e7-9c27-8c04ec03a2c9.png" width="275" height="475"> 
 
+## PROJECT LICENSE
 ```
-PROJECT LICENSE
-
 This project was submitted by Nishant Patel as part of the Nanodegree At Udacity.
 
 As part of Udacity Honor code, your submissions must be your own work, hence
